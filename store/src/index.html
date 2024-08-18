@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes raices</title>
+
+    <!-- ------------------------------- ICONOS -------------------------------- -->
+    <link rel="stylesheet" href="https://program09.github.io/YORDIALCANTARA/public/css/Icons/css/all.min.css">
+    <!-- --------------------------- BOOTSTRAP 5  CSS -------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ------------------------------- JQUERY -------------------------------- -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- ------------------------------ MAIN CSS ------------------------------- -->
+    <link rel="stylesheet" href="../public/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ========== Start HEADER ========== -->
+    <header class="header">
+        <div class="header-left header-movil">
+            <div class="logo">
+                <a href="">
+                    <img src="../public/img/logo-r-adondevivir.svg" alt="">
+                </a>
+            </div>
+            <nav class="nav nav-movil">
+                <ul class="lista-1">
+                    <li class="item-1 sublista-hover-item">
+                        <div class="btn-list">
+                            <span>Lugares</span>
+                            <i class="fa-sharp fa-light fa-chevron-down"></i>
+                        </div>
+                        <div class="menu-list">
+                            <ul class="lista-2 hover-1">
+                                <li class="item-2 item"><a href="" class="link-2">Cajamarca</a></li>
+                                <li class="item-2 item"><a href="" class="link-2">Jesus</a></li>
+                                <li class="item-2 item"><a href="" class="link-2">Namora</a></li>
+                                <li class="item-2 item"><a href="" class="link-2">Llacanora</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item-1 sublista-hover-item">
+                        <div class="btn-list">
+                            <span>Alquilar</span>
+                            <i class="fa-sharp fa-light fa-chevron-down"></i>
+                        </div>
+                        <div class="menu-list">
+                            <ul class="lista-2 hover-1">
+                                <li class="item-2 item"><a href="" class="link-2">Terrenos / Lotes</a></li>
+                                <li class="item-2 item"><a href="" class="link-2">Casas</a></li>
+                                <li class="item-2 item"><a href="" class="link-2">Departamentos</a></li>
+                                <li class="item-2 item"><a href="" class="link-2">Mini departamentos</a></li>
+                                <li class="item-2 item"><a href="" class="link-2">Oficinas</a></li>
+                                <li class="item-2 item"><a href="" class="link-2">Cuartos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item-1 sublista-hover-item">
+                        <div class="btn-list">
+                            <span>Comprar</span>
+                            <i class="fa-sharp fa-light fa-chevron-down"></i>
+                        </div>
+                        <div class="menu-list">
+                            <ul class="lista-2 hover-1">
+                                <li class="item-2 item"><a href="" class="link-2">Terrenos / Lotes</a></li>
+                                <li class="item-2 item"><a href="" class="link-2">Casas</a></li>
+                                <li class="item-2 item"><a href="" class="link-2">Departamentos</a></li>
+                                <li class="item-2 item"><a href="" class="link-2">Mini departamentos</a></li>
+                                <li class="item-2 item"><a href="" class="link-2">Oficinas</a></li>
+                                <li class="item-2 item"><a href="" class="link-2">Cuartos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="list-btn-movil">
+
+                <button class="btn-icon btn-aside"><i class="fa-light fa-magnifying-glass"></i></button>
+                <button class="btn-icon btn-aside" id="btn-aside"><i class="fa-light fa-bars-staggered"></i></button>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="list-button">
+                <button class="btn-icon btn-search" title="Buscar"><i class="fa-light fa-magnifying-glass"></i></button>
+                <a href=""><button class="btn-icon-20 btn-cl-1 txt-light btn-icon-hover">Mi cuenta</button></a>
+            </div>
+        </div>
+    </header>
+
+    <aside class="aside-movil">
+        <div class="section-1">
+            <a href=""><button class="btn-cl-1 txt-light">Mi cuenta</button></a>
+            <a href=""><button>Publicar</button></a>
+        </div>
+
+        <div class="section-2">
+
+            <div class="nav-pages">
+                <div id="accordion">
+
+                    <div class="acc">
+                        <div class="acc-header">
+                            <a class="collapsed" data-bs-toggle="collapse" href="#collapseOne">Lugares</a>
+                        </div>
+                        <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div class="acc-body">
+                                <ul class="lista-3">
+                                    <li class="item-3"><a href="" class="link-3">Inicio</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Casas</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Departamentos</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Mini departamentos</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Terrenos / Lotes</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Oficinas</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Cuartos</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Automoviles</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="acc">
+                        <div class="acc-header">
+                            <a class="collapsed " data-bs-toggle="collapse" href="#collapseTwo">Alquilar</a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                            <div class="acc-body">
+                                <ul class="lista-3">
+                                    <li class="item-3"><a href="" class="link-3">Casas</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Departamentos</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Mini departamentos</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Terrenos / Lotes</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Oficinas</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Cuartos</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Automoviles</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="acc">
+                        <div class="acc-header">
+                            <a class="collapsed " data-bs-toggle="collapse" href="#collapseThree">Comprar</a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                            <div class="acc-body">
+                                <ul class="lista-3">
+                                    <li class="item-3"><a href="" class="link-3">Casas</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Departamentos</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Mini departamentos</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Terrenos / Lotes</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Oficinas</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Cuartos</a></li>
+                                    <li class="item-3"><a href="" class="link-3">Automoviles</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+            <div class="nav-user">
+                <ul class="lista-3">
+                    <li class="item-3"><a href="" class="link-3">Mi cuenta</a></li>
+                    <li class="item-3"><a href="" class="link-3">Mis publicaciones</a></li>
+                    <li class="item-3"><a href="" class="link-3">Mis favoritos</a></li>
+                    <li class="item-3"><a href="" class="link-3">Notificaciones</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- ========== End HEADER ========== -->
+
+
+    <section class="home">
+        <!-- Video de fondo -->
+        <video class="video-background" autoplay loop muted>
+            <source src="../public/img/Cajamarca 4k 2023.mp4.crdownload" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+        <!-- Contenido principal -->
+        <div class="contenta">
+            <h1>Bienvenido</h1>
+            <p>Este es un ejemplo de video como fondo.</p>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    br
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            function checkScreenWidth() {
+                if ($(window).width() > 850) {
+                    $('.aside-movil').hide();
+                }
+            }
+            checkScreenWidth();
+            $(window).resize(checkScreenWidth);
+            $('#btn-aside').on('click', function () {
+                $('.aside-movil').toggle();
+            });
+        })
+
+        $(document).ready(function () {
+            $('.btn-list').on('click', function (event) {
+                event.stopPropagation();
+                $('.menu-list').not($(this).next('.menu-list')).slideUp();
+                $(this).next('.menu-list').slideToggle();
+            });
+            $(document).on('click', function () {
+                $('.menu-list').slideUp();
+            });
+            $('.menu-list').on('click', function (event) {
+                event.stopPropagation();
+            });
+        });
+    </script>
+    <!-- --------------------------- BOOTSTRAP 5 JS ---------------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- ------------------------------- MAIN JS ------------------------------- -->
+    <script src="public/js/main.js"></script>
+</body>
+
+</html>
